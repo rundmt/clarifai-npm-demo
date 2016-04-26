@@ -1,0 +1,17 @@
+{
+  "name": "derek-clarifai-npm",
+  "version": "0.0.1",
+  "description": "clarifai tagging module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "clarifai"
+  ],
+  "author": "Derek Tor <derekmuoktor@gmail.com> (http://derektor.me)",
+  "license": "ISC",
+  "dependencies": {
+    "superagent": "^1.8.3"
+  }
+}
