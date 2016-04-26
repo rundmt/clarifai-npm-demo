@@ -22,4 +22,15 @@ Clarifai.prototype.getAccessToken = function(cb) {
     });
 };
 
+//Step 4
+Clarifai.prototype.tagPhotoByUrl = function(url, cb) {
+  request.get('https://api.clarifai.com/v1/tag/')
+    .set('Content-Type', 'application/json')
+    .set('Authorization', 'Bearer '+this.accessToken)
+    .query({ url: url })
+    .end(function(err, res){      
+      cb(err, res);
+    });
+};
+
 module.exports = Clarifai;
